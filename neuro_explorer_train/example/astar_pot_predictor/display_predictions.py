@@ -140,7 +140,7 @@ def main(argv):
             map_weights[ii, jj, :] = cce_weights
     #train specs
     modelfile = config['training_configs']['outmodelfile']
-    histfile  = config['training_configs']['outhistfile']
+    #histfile  = config['training_configs']['outhistfile']
     loss_fn_txt      = config['training_configs']['loss_fn']
     loss_fn = switch_loss_fn(loss_fn_txt)
 
@@ -160,16 +160,16 @@ def main(argv):
     model.compile(optimizer='adam', loss=loss_fn, metrics=metric_fn)
 
     # load hist
-    with open(histfile, "rb") as file_pi:
-        history = pickle.load(file_pi)
-    plt.subplot(212)
-    plt.plot(history['loss'])
-    plt.plot(history['val_loss'])
-    # plt.title('model loss')
-    plt.ylabel('loss')
-    plt.xlabel('epoch')
-    plt.legend(['train', 'val'], loc='upper left')
-    plt.show()
+    #with open(histfile, "rb") as file_pi:
+        #history = pickle.load(file_pi)
+    #plt.subplot(212)
+    #plt.plot(history['loss'])
+    #plt.plot(history['val_loss'])
+    #plt.title('model loss')
+    #plt.ylabel('loss')
+    #plt.xlabel('epoch')
+    #plt.legend(['train', 'val'], loc='upper left')
+    #plt.show()
 
     outpath = config['training_configs']['outpath']
     for sidx in range(0, 50):

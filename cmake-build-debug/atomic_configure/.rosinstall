@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/devel/setup.sh

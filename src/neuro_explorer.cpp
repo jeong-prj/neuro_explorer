@@ -2101,7 +2101,7 @@ void NeuroExplorer::run_tf_fr_detector_session( const cv::Mat& input_map, cv::Ma
     TF_Tensor* int_tensor = TF_NewTensor(TF_FLOAT, dims, 4, mpf_fd_data, ndata, &NoOpDeallocator, 0);
     if (int_tensor != NULL)
     {
-    	//ROS_INFO("TF_NewTensor FR detection is OK\n");
+    	// ROS_INFO("TF_NewTensor FR detection is OK\n");
     }
     else
     {
@@ -2112,14 +2112,15 @@ void NeuroExplorer::run_tf_fr_detector_session( const cv::Mat& input_map, cv::Ma
     // //Run the Session
 
 ros::WallTime SessionStartTime = ros::WallTime::now();
-    TF_SessionRun(mptf_fd_Session, NULL, mptf_fd_input, mpptf_fd_input_values, 1, mptf_fd_output, mpptf_fd_output_values, 1, NULL, 0, NULL, mptf_fd_Status);
-ros::WallTime SessionEndTime = ros::WallTime::now();
-double session_time = (SessionEndTime - SessionStartTime).toNSec() * 1e-6;
-mf_total_fd_sessiontime_msec = mf_total_fd_sessiontime_msec + session_time ;
 
+    TF_SessionRun(mptf_fd_Session, NULL, mptf_fd_input, mpptf_fd_input_values, 1, mptf_fd_output, mpptf_fd_output_values, 1, NULL, 0, NULL, mptf_fd_Status);
+	ros::WallTime SessionEndTime = ros::WallTime::now();
+
+	double session_time = (SessionEndTime - SessionStartTime).toNSec() * 1e-6;
+mf_total_fd_sessiontime_msec = mf_total_fd_sessiontime_msec + session_time ;
     if(TF_GetCode(mptf_fd_Status) == TF_OK)
     {
-    	//ROS_INFO("FR detection Session is OK\n");
+    	// ROS_INFO("FR detection Session is OK\n");
     }
     else
     {

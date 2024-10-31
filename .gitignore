@@ -27,3 +27,8 @@ neuro_explorer_train/.idea
 neuro_explorer_train/utils/__pycache__
 neuro_explorer_train/examples/__pycache__
 neuro_explorer_train/common/__pycache__
+
+#clion cmake cache
+cmake-build-debug/
+nn_models/
+nn_models__/

@@ -1,5 +1,6 @@
 data_configs:
-    dataset_dir: '/home/hankm/data/neuro_globalplan/train_dataset/data4/processed_data'
+    dataset_dir: '/home/ej/catkin_ws/src/neuro_explorer/neuro_explorer_traindata/data/processed_data'
+    #dataset_dir: '/home/hankm/data/neuro_globalplan/train_dataset/data4/processed_data'
     gmheight: 480
     gmwidth: 480
     gmheight_p: 512
@@ -23,9 +24,9 @@ training_configs:
     num_epochs: 12
     loss_fn: 'huber' #'my_joint_loss' #'berhu' 
     lr: 0.0001 #0.0002 #0.01
-    outpath:      '/home/hankm/results/neuro_exploration_res/viz_net'
-    outmodelfile: '/home/hankm/results/neuro_exploration_res/viz_net/viznet_iros24'
-    outhistfile:  '/home/hankm/results/neuro_exploration_res/viz_net/viznet_iros24_hist'
+    outpath:      '/home/ej/results/neuro_exploration_res/viz_net'
+    outmodelfile: '/home/ej/results/neuro_exploration_res/viz_net/viznet_iros24'
+    outhistfile:  '/home/ej/results/neuro_exploration_res/viz_net/viznet_iros24_hist'
     
 testing_configs:
     metric_fn: 'maxpot_euc_dist' #'rel_potdiff' #'mae' #'rmse' #

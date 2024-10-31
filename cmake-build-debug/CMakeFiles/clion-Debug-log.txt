@@ -1,0 +1,114 @@
+/home/ej/open_sw/clion-2024.1.5/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/ej/open_sw/clion-2024.1.5/bin/ninja/linux/x64/ninja -G Ninja -DPython_EXECUTABLE=/home/ej/catkin_ws/src/neuro_explorer/venv/bin/python -DPython3_EXECUTABLE=/home/ej/catkin_ws/src/neuro_explorer/venv/bin/python -S /home/ej/catkin_ws/src/neuro_explorer -B /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/ej/catkin_ws/install;/opt/ros/noetic
+-- This workspace overlays: /home/ej/catkin_ws/install;/opt/ros/noetic
+CMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /home/ej/open_sw/python/bin/python3 (found suitable version "3.12.7", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /home/ej/open_sw/python/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /home/ej/open_sw/python/lib/python3.12/site-packages/em.py  
+-- Using empy: /home/ej/open_sw/python/lib/python3.12/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+CMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) at /usr/src/googletest/googletest/cmake/internal_utils.cmake:249 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/src/googletest/googletest/CMakeLists.txt:91 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /home/ej/open_sw/python/bin/python3 (found version "3.12.7") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found OpenCV: /usr (found version "4.2.0") 
+-- neuro_explorer: 1 messages, 0 services
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'OpenMP' but neither 'OpenMP_INCLUDE_DIRS' nor
+  'OpenMP_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:125 (catkin_package)
+
+
+include /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/devel
+pkg: /home/ej/catkin_ws/install/include/opt/ros/noetic/include/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp/usr/include/usr/include/opencv4/usr/include/eigen3
+-- Installing devel-space wrapper /home/ej/catkin_ws/src/neuro_explorer/script/exploration_metric_for_single_robot.py to /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/devel/lib/neuro_explorer
+-- Installing devel-space wrapper /home/ej/catkin_ws/src/neuro_explorer/script/exploration_metric_from_bag.py to /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug/devel/lib/neuro_explorer
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Python3_EXECUTABLE
+    Python_EXECUTABLE
+
+
+-- Build files have been written to: /home/ej/catkin_ws/src/neuro_explorer/cmake-build-debug

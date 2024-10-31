@@ -1,5 +1,5 @@
 data_configs:
-    dataset_dir: '/home/hankm/data/neuro_globalplan/train_dataset/data4/processed_data'
+    dataset_dir: '/home/ej/catkin_ws/src/neuro_explorer/neuro_explorer_train/data/processed_data'
     gmheight: 480
     gmwidth: 480
     gmheight_p: 512
@@ -20,6 +20,6 @@ network_configs:
 training_configs:
     num_epochs: 12
     loss_fn: 'binary_crossentropy'
-    outmodelfile: '/home/hankm/results/neuro_globalplan_res/fr_detection/model_1'  # batch norm
-    outhistfile:  '/home/hankm/results/neuro_globalplan_res/fr_detection/train_history_dict_model_1'
+    outmodelfile: '/home/ej/results/neuro_globalplan_res/fr_detection/model_1'  # batch norm
+    outhistfile:  '/home/ej/results/neuro_globalplan_res/fr_detection/train_history_dict_model_1'
     
